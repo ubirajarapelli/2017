@@ -89,13 +89,14 @@ li {
 time {
   font-family: 'antoniobold';
   font-size: 2em;
-  line-height: 1.1em; }
+  line-height: 1.1em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); }
 
 blockquote {
   text-align: center; }
   blockquote p {
     font-style: italic;
-    color: #f8d871;
+    color: #7d6d2b;
     line-height: 1.2em; }
   blockquote strong {
     font-family: 'Open Sans';
@@ -142,14 +143,14 @@ small {
   font-family: 'antoniolight';
   font-size: 1.6em;
   line-height: 1.2em;
-  color: #f8d871; }
+  color: #7d6d2b; }
 
 .contact-link {
   margin-bottom: 2em;
   font-family: 'antoniobold';
   font-size: 1.1em;
   line-height: 1.2em;
-  color: #f8d871; }
+  color: #7d6d2b; }
 
 .button-action {
   width: auto;
@@ -340,7 +341,7 @@ input[type="submit"] {
   .modal p {
     font-size: 1.6em; }
     .modal p a {
-      color: #f8d871; }
+      color: #7d6d2b; }
       .modal p a:hover {
         text-decoration: none; }
   .modal h1,
@@ -409,7 +410,19 @@ section {
   padding: 4vw;
   border-bottom: 1px solid #4d4d4d; }
   section a {
-    color: #f8d871; }
+    color: #7d6d2b; }
+
+#programacao {
+  padding-top: 4vh; }
+  #programacao .wrapper {
+    width: 100%; }
+  #programacao::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    background: url("../images/footer.svg") repeat-x #c89858;
+    height: 50px;
+    width: 100%; }
 
 section#sobre,
 section#inscreva-se,
@@ -437,7 +450,7 @@ section#patrocinadores {
     margin-bottom: .5em;
     font-size: .9em; }
   .speaker a {
-    color: #f8d871; }
+    color: #7d6d2b; }
   .speaker img {
     margin-bottom: 0;
     object-fit: scale-down; }
@@ -460,6 +473,10 @@ section#patrocinadores {
     bottom: 4em;
     left: 50%;
     border: medium solid #3e3203; }
+  .schedule::after {
+    content: url("../images/tube.svg");
+    z-index: 0;
+    margin: 0.1%; }
   .schedule-hour {
     position: relative;
     display: block;
@@ -467,7 +484,7 @@ section#patrocinadores {
     font-family: 'antoniobold';
     font-size: 1.2em;
     line-height: 2em;
-    color: #f8d871;
+    color: #7d6d2b;
     background: white; }
   .schedule-title {
     position: relative;
@@ -506,7 +523,7 @@ dd {
     font-family: 'antoniobold';
     font-size: 1.2em;
     line-height: 1.4em;
-    color: rgba(248, 216, 113, 0.9); }
+    color: #7d6d2b; }
   .talk-light {
     display: block;
     margin-bottom: 1em;
@@ -591,7 +608,7 @@ dd {
   font-family: 'antoniobold';
   font-size: 1.05em;
   line-height: 1.4em;
-  color: #f8d871;
+  color: #7d6d2b;
   text-decoration: none; }
   .link-sponsor:hover {
     text-decoration: underline; }
@@ -599,27 +616,38 @@ dd {
 header {
   position: relative;
   height: 100vh;
-  padding: 1% 0 5% 0;
   font-family: 'antoniobold';
   color: white;
   text-align: center;
-  background-image: url("../images/igreja-matriz-sbc.jpg");
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-attachment: fixed;
+  background: url("../images/clouds.svg") bottom, url("../images/landscape.svg");
   background-size: cover;
   background-color: #0060b8; }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: url("../images/footer.svg") #c89858 repeat-x; }
   header .logo {
     width: 13em;
     margin-bottom: 1.2em; }
   header .subtitle {
     margin-bottom: .5em;
     font-size: 2.2em;
-    color: white; }
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); }
   header img {
     margin-bottom: 2em; }
   header h1 {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); }
+  header .header-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: rgba(0, 96, 184, 0.3); }
 
 nav {
   position: relative;
@@ -670,12 +698,13 @@ nav {
     text-decoration: none; }
 
 .locale {
-  margin-bottom: .5em;
-  font-family: 'antoniolight';
-  font-size: 1.4em;
+  margin-bottom: 1.5em;
+  font-family: 'antoniobold';
+  font-size: 1.5em;
   font-weight: lighter;
   line-height: 1.2em;
-  color: white; }
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); }
 
 .legend {
   position: absolute;
@@ -783,7 +812,7 @@ textarea {
     color: whitesmoke;
     margin: 0; }
   #footer a {
-    color: #f8d871; }
+    color: #7d6d2b; }
     #footer a:hover {
       text-decoration: none; }
 
